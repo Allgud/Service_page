@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "TTLakes";
+  src: url("./fonts/TTLakes-Regular.eot");
+  src: url("./fonts/TTLakes-Regular.eot?iefix") format("eot"),
+    url("./fonts/TTLakes-Regular.woff") format("woff"),
+    url("./fonts/TTLakes-Regular.ttf") format("truetype"),
+    url("./fonts/TTLakes-Regular.svg#webfont") format("svg");
+  font-weight: normal;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: "TTLakes-Bold";
+  src: url("./fonts/TTLakes-Bold.eot");
+  src: url("./fonts/TTLakes-Bold.eot?iefix") format("eot"),
+    url("./fonts/TTLakes-Bold.woff") format("woff"),
+    url("./fonts/TTLakes-Bold.ttf") format("truetype"),
+    url("./fonts/TTLakes-Bold.svg#webfont") format("svg");
+  font-weight: normal;
+  font-size: normal;
+}
+
+/*Основняк*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "TTLakes";
+  min-width: 320px;
+}
+
+/*Головняк*/
+
+.divider {
+  width: 2px;
+  height: 32px;
+  background-color: #eaeaea;
+  border-radius: 1px;
+}
