@@ -20,11 +20,14 @@
   font-size: normal;
 }
 
-/*Основняк*/
+html {
+  box-sizing: border-box;
+}
 
 * {
-  margin: 0;
-  padding: 0;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: inherit;
 }
 
 body {
@@ -32,11 +35,319 @@ body {
   min-width: 320px;
 }
 
-/*Головняк*/
+.container {
+  margin: 15px;
+}
 
-.divider {
+header {
+  max-height: 78px;
+  padding-top: 10px;
+}
+
+main {
+  margin-right: -15px;
+  background-color: #f8f8f8;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: #ff3e79;
+  border-radius: 20px;
+  outline: none;
+  border-style: none;
+}
+
+.menu__group {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu__group div {
+  margin: 0px 10px;
+}
+
+.interactive__group {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+}
+.service__group {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.interactive__group div {
+  display: none;
+  margin: 0px 5px;
+}
+
+.service__group div {
+  margin: 0px 8px;
+}
+
+.service__button__text {
+  display: none;
+}
+
+.devider {
   width: 2px;
   height: 32px;
   background-color: #eaeaea;
   border-radius: 1px;
+}
+
+.first__devider {
+  display: none;
+}
+
+.section__title {
+  padding-top: 15px;
+}
+
+h1::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 40px;
+  background-color: #41f6d7;
+  margin-left: -15px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+h1 span {
+  display: inline-block;
+  padding-left: 15px;
+  font-size: 28px;
+  position: relative;
+  top: -10px;
+  font-family: "TTLakes-Bold";
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.nav__list__button {
+  height: 40px;
+  margin: 0px 5px;
+  border: none;
+  background-color: inherit;
+}
+
+.nav__list__button:active {
+  border: 2px solid #b8ffec;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.nav__list__button a {
+  text-decoration: none;
+  cursor: default;
+}
+
+.nav__list__button span {
+  display: inline-block;
+  padding: 0px 15px;
+  font-family: "TTLakes";
+  color: #7e7e82;
+  font-size: 16px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.page__content p {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  margin: 1em 1em 1em -1em;
+}
+
+.page__text:not(:first-child) {
+  display: none;
+}
+
+.page__content > .dropdown {
+  margin: 0em -1em;
+}
+
+.dropdown__button {
+  margin-left: 1em;
+  padding-top: 10px;
+  border: none;
+  background-color: inherit;
+}
+
+.dropdown span {
+  display: inline-block;
+  padding-left: 15px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+.dropdown-tablet {
+  display: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content div {
+  margin: 0px 15px;
+}
+
+.content div:last-child {
+  margin-top: 20px;
+  margin-left: -15px;
+  flex-grow: 1;
+}
+
+/*Разрешение 768*/
+
+@media (min-width: 768px) {
+  .interactive__group div {
+    display: block;
+  }
+  .body {
+    min-width: 768px;
+  }
+  .first__devider {
+    display: block;
+  }
+  .page__text:not(:first-child) {
+    display: block;
+  }
+
+  .page__content {
+    padding-left: 1em;
+    height: 155px;
+    overflow: hidden;
+  }
+
+  .page__image img {
+    width: 360px;
+    height: 200px;
+  }
+
+  .content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .content > .page__content {
+    width: 320px;
+    margin-right: 50px;
+  }
+
+  .dropdown-tablet {
+    display: block;
+    position: absolute;
+    top: 380px;
+    left: 10px;
+  }
+}
+
+/*Разрешение 1120*/
+
+@media (min-width: 1120px) {
+  body {
+    min-width: 1120px;
+    background-color: #f8f8f8;
+  }
+
+  .container {
+    margin: 30px;
+  }
+
+  .menu__group,
+  .interactive__group {
+    display: none;
+  }
+
+  .service__group {
+    position: absolute;
+    top: 45px;
+    right: 30px;
+  }
+
+  .service__group div:first-child {
+    display: none;
+  }
+
+  .service__button__text {
+    display: inline-block;
+    padding: 0px 5px 0px 15px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+  }
+
+  .section__title {
+    margin-top: -40px;
+    margin-left: -15px;
+  }
+
+  h1 span {
+    padding-left: 30px;
+  }
+
+  .nav__list {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .nav__list li {
+    margin-left: -5px;
+  }
+
+  .page__image img {
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: -80px;
+    width: 532px;
+    height: 307px;
+    border-radius: 2px;
+  }
+
+  .page__content {
+    padding-right: 15px;
+    flex: 1 0 50%;
+  }
+
+  .page__content {
+    position: relative;
+    top: 20px;
+    overflow: visible;
+    margin-left: 0;
+    padding-right: 50px;
+  }
+
+  .page__content p {
+    line-height: 20px;
+  }
+
+  .dropdown-tablet {
+    display: none;
+  }
 }

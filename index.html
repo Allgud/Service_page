@@ -5,33 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Service_page</title>
+    <title>Service</title>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <div class="menu">
-                <div class="burger-menu__group">
-                    <div class="menu__button">
-                        <button class="menu__button__burger" type="button"></button>
+    <body>
+        <header>
+            <div class="container">
+                <div class="header__menu">
+                    <div class="menu__group">
+                        <div>
+                            <button class="menu__button button" type="button">
+                                <img src="./images/icons/icon.svg" alt="Кнопка меню">
+                            </button>
+                        </div>
+                        <div class="devider first__devider"></div>
+                        <div class="logo">
+                            <img src="./images/icons/Logo.svg" alt="Логотип">
+                        </div>
                     </div>
-                    <div class="divider divider-first"></div>
-                    <div class="logo">
-                        <img src="./images/icons/Logo.svg" alt="Логотип компании">
+                    <div class="interactive__group">
+                        <div>
+                            <button class="call__button button" type="button">
+                                <img src="./images/icons/call.svg" alt="Кнопка вызова">
+                            </button>
+                        </div>
+                        <div>
+                            <button class="chat__button button" type="button">
+                                <img src="./images/icons/chat.svg" alt="Кнопка чата">
+                            </button>
+                        </div>
+                        <div>
+                            <button class="profile__button button" type="button">
+                                <img src="./images/icons/profile.svg" alt="Кнопка выбора сервиса">
+                            </button>
+                        </div>
                     </div>
-                </div>
-                <div class="interactive__group">
-                    <div class="menu__button"></div>
-                    <div class="menu__button"></div>
-                    <div class="menu__button"></div>
-                </div>
-                <div class="service__group">
-                    <div class="divider divider-second"></div>
-                    <div class="menu__button"></div>
-                    <div class="menu__button"></div>
+                    <div class="service__group">
+                        <div class="devider second__devider"></div>
+                        <div>
+                            <span class="service__button__text"><b>Оставить заявку</b></span>
+                            <button class="service__button button" type="button">
+                                <img src="./images/icons/Group.svg" alt="Кнопка выбора сервиса">
+                            </button>
+                        </div>
+                        <div>
+                            <span class="service__button__text"><b>Статус ремонта</b></span>
+                            <button class="status__button button" type="button">
+                                <img src="./images/icons/status.svg" alt="Кнопка статуса">
+                            </button>
+                        </div> 
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-</body>
+        </header>
+        <main>
+            <div class="container">
+                <div class="section__title">
+                    <h1><span>Услуги и сервисы</span></h1>
+                </div>
+                <nav class="navbar">
+                    <ul class="nav__list">
+                        <li><button class="nav__list__button" type="button"><a href="#"><span>Ремонтируемые бренды</span></a></button></li>
+                        <li><button class="nav__list__button" type="button"><a href="#"><span>Ремонтируемые устройства</span></a></button></li>
+                        <li><button class="nav__list__button" type="button"><a href="#"><span>Цены на услуги</span></a></button></li>
+                        <li><button class="nav__list__button" type="button"><a href="#"><span>Адреса сервисных центров</span></a></button></li>
+                        <li><button class="nav__list__button" type="button"><a href="#"><span>Специальные цены</span></a></button></li>
+                        <li><button class="nav__list__button" type="button"><a href="#"><span>Отзывы</span></a></button></li>
+                    </ul>
+                </nav>
+                <div class="content">
+                    <div class="page__content">
+                        <p class="page__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
+                            Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+                        <p class="page__text">
+                                Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+                        </p>
+                        <div class="dropdown">
+                            <button class="dropdown__button" type="button"><img src="./images/icons/dropdown.svg" alt="Стрелочки"/></button>
+                            <span><b>Читать далее</b></span>
+                        </div>
+                    </div>
+                    <!--Приделал костыль. Надо изначально это тоже было завернуть во флекс-->
+                    <div class="dropdown dropdown-tablet">
+                        <button class="dropdown__button" type="button"><img src="./images/icons/dropdown.svg" alt="Стрелочки"/></button>
+                        <span><b>Читать далее</b></span>
+                    </div>
+                    <div class="page__image">
+                        <img src="./images/_MG_3223.jpg" alt="Изображение таблички с нашим логотипом на входе в наш офис"/>
+                    </div>
+                </div>
+            </div> 
+        </main>
+    </body>
 </html>
