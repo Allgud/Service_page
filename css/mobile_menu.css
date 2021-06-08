@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "TTLakes";
+  src: url("../fonts/TTLakes-Regular.eot");
+  src: url("../fonts/TTLakes-Regular.eot?iefix") format("eot"),
+    url("../fonts/TTLakes-Regular.woff") format("woff"),
+    url("../fonts/TTLakes-Regular.ttf") format("truetype"),
+    url("../fonts/TTLakes-Regular.svg#webfont") format("svg");
+  font-weight: normal;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: "TTLakes-Bold";
+  src: url("../fonts/TTLakes-Bold.eot");
+  src: url("../fonts/TTLakes-Bold.eot?iefix") format("eot"),
+    url("../fonts/TTLakes-Bold.woff") format("woff"),
+    url("../fonts/TTLakes-Bold.ttf") format("truetype"),
+    url("../fonts/TTLakes-Bold.svg#webfont") format("svg");
+  font-weight: normal;
+  font-size: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  max-width: 320px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid blue;
+}
+
+header {
+  border: 1px solid red;
+}
+main {
+  border: 1px solid green;
+}
+
+.container {
+  max-width: 270px;
+}
+
+/*MAIN MENU */
+
+ul {
+  list-style: none;
+}
+
+.main-menu__list li {
+  margin: 16px 0px;
+}
+
+/* FOOTER */
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contacts div {
+  margin: 6px 0px;
+}
+
+.contacts__buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contacts__buttons div {
+  margin-right: 1em;
+}
+
+.contacts__email {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.contacts__phone {
+  font-family: "TTLakes-Bold";
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.language__switch {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 35px 0px 32px 0px;
+}
+
+.language__switch div {
+  padding-right: 7px;
+}
