@@ -98,6 +98,7 @@ body {
 /*MAIN*/
 
 .service-page__main {
+  padding-top: 24px;
   background-color: #f8f8f8;
 }
 .service-page__main__head {
@@ -120,7 +121,7 @@ body {
 }
 
 .service-page__main__navigation {
-  margin: 32px 14px;
+  margin: 24px 14px;
 }
 
 .service-page__main__navigation ul {
@@ -144,6 +145,7 @@ body {
 }
 
 .service-page__main__navigation__button a {
+  display: inline-block;
   text-decoration: none;
   color: #7e7e82;
   font-family: "TTLakes";
@@ -153,8 +155,43 @@ body {
   padding: 8px 16px;
 }
 
-.service-page__main__navigation__button:active {
+.service-page__main__navigation__button:active a {
   border: 2px solid #b8ffec;
   border-radius: 6px;
   background-color: white;
+  padding: 6px 14px;
+}
+
+.service-page__main__content__text p {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+}
+
+.service-page__main__content__text p:not(:first-child) {
+  margin: 0px 0px 0px 16px;
+  display: none;
+}
+
+.service-page__main__content__text p:first-child {
+  margin: -16px 0px 16px 16px;
+}
+
+.service-page__main__content__dropdown {
+  margin: 0px 16px;
+}
+
+.service-page__main__content__dropdown button {
+  padding: 8px;
+  outline: none;
+  border: none;
+  background-color: inherit;
+}
+
+.service-page__main__content__image {
+  background: url("../images/img.jpg") no-repeat center;
+  width: 320px;
+  height: 230px;
+  margin-top: -16px;
+  margin-left: -8px;
 }
