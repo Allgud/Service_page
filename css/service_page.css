@@ -27,8 +27,7 @@
 
 body {
   font-family: "TTLakes";
-  width: 320px;
-  border: 1px solid blue;
+  min-width: 320px;
 }
 
 .service-page__container {
@@ -61,7 +60,9 @@ body {
 }
 
 .service-page__header__contacts {
+  flex-grow: 1;
   display: flex;
+  justify-content: flex-end;
 }
 
 .service-page__header__contacts div {
@@ -144,7 +145,7 @@ body {
   background-color: inherit;
 }
 
-.service-page__main__navigation__button a {
+.service-page__main__navigation__button span {
   display: inline-block;
   text-decoration: none;
   color: #7e7e82;
@@ -155,11 +156,16 @@ body {
   padding: 8px 16px;
 }
 
-.service-page__main__navigation__button:active a {
+.service-page__main__navigation__button:active span {
   border: 2px solid #b8ffec;
   border-radius: 6px;
   background-color: white;
   padding: 6px 14px;
+}
+
+.service-page__main__content {
+  display: flex;
+  flex-direction: column;
 }
 
 .service-page__main__content__text p {
@@ -190,8 +196,113 @@ body {
 
 .service-page__main__content__image {
   background: url("../images/img.jpg") no-repeat center;
-  width: 320px;
-  height: 230px;
+  min-width: 320px;
+  min-height: 230px;
   margin-top: -16px;
   margin-left: -8px;
+}
+
+/*DEF 768px*/
+
+@media (min-width: 768px) {
+  body {
+    min-width: 100%;
+  }
+
+  .service-page__container {
+    margin: 0 16px;
+  }
+
+  .divider--first {
+    display: block;
+  }
+
+  .service-page__header__contacts div {
+    display: block;
+  }
+
+  .service-page__main__highlight {
+    margin: 0px 24px 0px -16px;
+  }
+
+  .service-page__main__content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .service-page__main__content__text {
+    flex: 0 0 45%;
+    margin-right: 24px;
+  }
+
+  .service-page__main__content__image {
+    flex: 0 0 55%;
+    background-size: 90%;
+    transform: translateY(-16px);
+  }
+
+  .service-page__main__content__text p:not(:first-child) {
+    display: block;
+  }
+
+  .service-page__main__content__text--invisible {
+    display: none;
+  }
+
+  .service-page__main__content__dropdown {
+    padding-top: 10px;
+  }
+}
+
+/*DEF 1120*/
+
+@media (min-width: 1120px) {
+  body {
+    min-width: 100%;
+    background-color: #f8f8f8;
+  }
+
+  .service-page__main__navigation ul {
+    flex-wrap: wrap;
+  }
+
+  .service-page__container {
+    margin: 0 32px;
+  }
+
+  .service-page__main__highlight {
+    margin: 0px 32px 0px -32px;
+  }
+
+  .service-page__main__content__text--invisible {
+    display: inline-block;
+  }
+
+  .service-page__header__menu,
+  .service-page__header__contacts,
+  .divider {
+    display: none;
+  }
+
+  .service-page__header__tools {
+    position: absolute;
+    top: 42px;
+    right: 32px;
+    z-index: 2;
+  }
+
+  .service-page__header__tools span {
+    display: inline-block;
+    margin-right: 8px;
+    transform: translateY(-5px);
+  }
+
+  .service-page__main {
+    position: relative;
+    top: -32px;
+  }
+
+  .service-page__header {
+    background-color: inherit;
+  }
 }
