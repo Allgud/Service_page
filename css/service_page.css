@@ -149,12 +149,12 @@ body {
   background-color: inherit;
 }
 
-.service-page__main__navigation__button:hover {
-  cursor: pointer;
-}
-
 .service-page__main__navigation__button input {
   display: none;
+}
+
+.service-page__main__navigation__button input + label:hover span {
+  cursor: pointer;
 }
 
 .service-page__main__navigation__button input:checked + label span {
