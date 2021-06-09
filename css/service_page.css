@@ -43,6 +43,10 @@ body {
   border-style: none;
 }
 
+.button:hover {
+  cursor: pointer;
+}
+
 /*HEADER*/
 
 .service-page__header {
@@ -143,6 +147,21 @@ body {
 .service-page__main__navigation__button {
   border-style: none;
   background-color: inherit;
+}
+
+.service-page__main__navigation__button:hover {
+  cursor: pointer;
+}
+
+.service-page__main__navigation__button input {
+  display: none;
+}
+
+.service-page__main__navigation__button input:checked + label span {
+  border: 2px solid #b8ffec;
+  border-radius: 6px;
+  background-color: white;
+  padding: 6px 14px;
 }
 
 .service-page__main__navigation__button span {

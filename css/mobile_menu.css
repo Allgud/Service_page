@@ -90,6 +90,7 @@ ul {
 
 .main-menu__list__button:hover b {
   color: #7e7e82;
+  cursor: pointer;
 }
 
 .main-menu__list__button .highlight {
@@ -106,7 +107,7 @@ ul {
   /*padding: 16px 0px;*/
 }
 
-.main-menu__list a {
+.main-menu__list span {
   text-decoration: none;
   color: #1b1c21;
   cursor: default;

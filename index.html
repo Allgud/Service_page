@@ -12,7 +12,10 @@
         <div class="service-page__header">
             <div class="service-page__header__menu">
                 <div class="service-page__menu__button">
-                    <button class="menu__button button" type="button">
+                    <button 
+                      class="menu__button button" 
+                      type="button"
+                      >
                         <img src="./images/icons/icon.svg" alt="Кнопка меню">
                     </button>
                 </div>
@@ -61,12 +64,31 @@
             </div>
             <div class="service-page__main__navigation">
                 <ul>
-                    <li><button class="service-page__main__navigation__button" type="button"><span>Ремонтируемые бренды</span></button></li>
-                    <li><button class="service-page__main__navigation__button" type="button"><span>Ремонтируемые устройства</span></button></li>
-                    <li><button class="service-page__main__navigation__button" type="button"><span>Цены на услуги</span></button></li>
-                    <li><button class="service-page__main__navigation__button" type="button"><span>Адреса сервисных центров</span></button></li>
-                    <li><button class="service-page__main__navigation__button" type="button"><span>Специальные цены</span></button></li>
-                    <li><button class="service-page__main__navigation__button" type="button"><span>Отзывы</span></button></li>
+                    <li><button class="service-page__main__navigation__button" type="button">
+                        <input type="radio" name="navigation__button" id="navigation__button--1" checked/>
+                        <label for="navigation__button--1"><span>Ремонтируемые бренды</span></label></button>
+                    </li>
+                    <li><button class="service-page__main__navigation__button" type="button">
+                        <input type="radio" name="navigation__button" id="navigation__button--2"/>
+                        <label for="navigation__button--2"><span>Ремонтируемые устройства</span></label></button>
+                    </li>
+                    <li><button class="service-page__main__navigation__button" type="button">
+                        <input type="radio" name="navigation__button" id="navigation__button--3"/>
+                        <label for="navigation__button--3"><span>Цены на услуги</span></label></button>
+                    </li>
+                    <li><button class="service-page__main__navigation__button" type="button">
+                        <input type="radio" name="navigation__button" id="navigation__button--4"/>
+                        <label for="navigation__button--4"><span>Адреса сервисных центров</span></label></button>
+                    </li>
+                    <li><button class="service-page__main__navigation__button" type="button">
+                        <input type="radio" name="navigation__button" id="navigation__button--5"/>
+                        <label for="navigation__button--5"><span>Специальные цены</span></label></button>
+                    </li>
+                    <li><button class="service-page__main__navigation__button" type="button">
+                        <input type="radio" name="navigation__button" id="navigation__button--6"/>
+                        <label for="navigation__button--6"><span>Отзывы</span></label></button>
+                    </li>
+                    
                 </ul>
             </div>
             <div class="service-page__main__content">
@@ -82,5 +104,6 @@
             </div>
         </div>
     </div>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
