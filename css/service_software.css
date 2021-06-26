@@ -40,14 +40,15 @@ h2 {
   font-family: "TTLakes";
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: -0.2px;
   color: #7e7e82;
   text-transform: uppercase;
   padding: 16px;
 }
 
-/*Cards*/
+/*CARDS*/
+
 .list {
   position: relative;
   padding-top: 16px;
@@ -55,30 +56,34 @@ h2 {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: hidden;
+  min-width: 0;
 }
 
 .list::after {
   content: "";
   width: 4px;
-  height: 96px;
-  position: absolute;
+  height: 85px;
+  position: fixed;
   background-color: white;
-  top: 16px;
+  top: 95px;
   right: 0px;
   box-shadow: 0 0 10px 8px white;
+  z-index: 100;
 }
 
 .list__item {
   border: 1px solid lightgrey;
+  min-width: 0;
+  height: 72px;
   border-radius: 7px;
-  padding: 19px 15px;
+  padding: 0px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
   margin-right: 16px;
   margin-bottom: 16px;
-  flex: 0 0 68%;
+  flex: 0 0 65vw;
 }
 
 .list__item__button button {
@@ -118,4 +123,53 @@ h2 {
   background-image: url(../images/icons/dropdown.svg);
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/*SWIPER*/
+
+.swiper-pagination {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.swiper-pagination-bullet {
+  display: inline-block;
+  margin: 0px 6px;
+  width: 12px;
+  height: 12px;
+  background-color: #b5b6bc;
+}
+
+@media (min-width: 768px) {
+  body {
+    width: 100%;
+  }
+
+  h2 {
+    padding: 16px 24px;
+  }
+
+  .list {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 24px;
+    padding-left: 24px;
+  }
+
+  .list::after {
+    display: none;
+  }
+
+  .list__item {
+    margin-right: 24px;
+    flex: 0 0 26%;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  .software-dropdown {
+    opacity: 1;
+  }
 }
