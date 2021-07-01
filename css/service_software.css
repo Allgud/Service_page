@@ -179,6 +179,7 @@ h2 {
 
 @media (min-width: 1120px) {
   body {
+    max-width: 1200px;
     width: 100%;
   }
 
