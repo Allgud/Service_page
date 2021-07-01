@@ -176,7 +176,7 @@ ul {
 
 @media (min-width: 768px) {
   body {
-    max-height: 100vh;
+    height: 100vh;
   }
 
   ul {
